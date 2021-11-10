@@ -1,0 +1,91 @@
+<html ml-update="aware" lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tooltip.css">
+
+    <title>SkinPrint</title>
+</head>
+
+<body>
+    <script src="js/driver.js"></script>
+    <script src="js/noobOrigamy.js"></script>
+    <script src="js/glueOrigamy.js"></script>
+    <script src="js/library.js"></script>
+
+    <script>
+        window.onload = driver;
+    </script>
+
+
+
+    <div class="bg">
+        <div id="rectifier">
+            <img src="assets/rec.png">
+        </div>
+        <div class="waveWrapper waveAnimation">
+            <div class="waveWrapperInner bgTop">
+                <div class="wave waveTop"
+                    style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+                <div class="wave waveMiddle"
+                    style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom"
+                    style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="pager">
+        <article id="uploadS" style="display: block;">
+            <h2>Welcome
+            </h2>
+            <p>Enter a valid minecraft skin.
+                <br>
+                <br>
+                <input name="up" type="file" id="imageInput" accept="image/*" hidden="">
+                <label for="imageInput" id="upl">Upload</label>
+            </p>
+        </article>
+        <article id="chooseS" style="display: none">
+            <h2> Choose one !</h2>
+            <br>
+            <div class="tooltip" onclick="runNoob(skin)">
+                <h3>Origamy</h3>
+                <p>
+                    Glue not needed, Just cut and assemble, uses the noobOrigamy() function
+                </p>
+            </div>
+            <div class="tooltip" onclick="runGlue(skin)">
+                <h3>Glue (Preferred )</h3>
+                <p>
+                    Glue required, Larger, uses the glueOrigamy() function
+                </p>
+            </div>
+        </article>
+        <article id="doneS" style="display: none;">
+            <h3>Done </h3>
+            <p>
+                Thanks for using my tool!
+            </p>
+            <a id="down" href="" download="">
+                Download
+            </a>
+            <a id="print" onclick="PrintImage(output)">
+                Print
+            </a>
+        </article>
+    </section>
+
+
+</body>
+
+</html>
